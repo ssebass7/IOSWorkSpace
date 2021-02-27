@@ -1,0 +1,83 @@
+//Ejercicio 1
+var base = 20.0;
+var altura = 10.0;
+
+var perimetro = (base * 2.0) + (altura * 10.0);
+var area = (base * altura);
+print("El perimetro es: \(perimetro) y el area: \(area)");
+
+//Ejercicio 3
+var num1 = 5.0;
+ var num2 = 2.0;
+
+var suma = num1 + num2;
+var resta = num1 - num2;
+var division = num1 / num2;
+var multi = num1 * num2;
+
+print("El suma es: \(suma)");
+print("La resta es: \(resta)");
+print("La division es: \(division)");
+print("La multiplicacion es: \(multi)");
+
+//Ejercicio 4
+var gradosCelcisus = 27.0;
+var  gradosFarenheit = 100.0;
+
+var grCelagrFar = ( gradosCelcisus  * 9.0 / 5.0) + 32.0;
+var grFaraCel = (gradosFarenheit - 32.0) * 5.0 / 9.0;
+
+print("Los grados Celsius \(gradosCelcisus) son \(grCelagrFar) grados Farenheit");
+print("Los grados Farenheit \(gradosFarenheit) son \(grFaraCel) grados Celsius");
+
+//Ejercicio 5
+var num3 = 4.0;
+var num4 = 7.0;
+var num5 = 9.0;
+
+var media = (num3 + num4 + num5) / 3.0;
+
+print("La media de los números \(num3),\(num4),\(num5) es \(media)");
+
+//Ejercicio 6
+
+var sueldoBase : Double = 2000;
+var numComisiones : Double = 5;
+var sueldoTotal = sueldoBase + (numComisiones * (sueldoBase * 0.1));
+print("Su sueldo total es: \(sueldoTotal)");
+
+//Ejercicio 7
+
+var califParTrim1 : Double = 5;
+var califParTrim2 : Double = 6;
+var califParTrim3 : Double = 8;
+
+var califExFinal : Double = 9;
+var califTrabFinal : Double = 7;
+
+var notaFinalTrim = ((califParTrim1 + califParTrim2 + califParTrim3) / 3) * 0.55;
+var notaFinalExamen = califExFinal * 0.3;
+var notaFinaltrabajo = califTrabFinal * 0.15;
+
+var notaFinal = notaFinalTrim + notaFinalExamen + notaFinaltrabajo; 
+
+print("La calificación final es de \(notaFinal)");
+
+//Ejercicio 8
+
+var resCorrectas = 5.0;
+var resIncorrectas = 3.0;
+ var valorResTrue = resCorrectas * 5.0 / resCorrectas;
+var valorResFalse = resIncorrectas * (-1.0) / resIncorrectas;
+ var puntTotal = valorResTrue + valorResFalse;
+
+print("Tu nota final es: \(puntTotal)");
+
+//Ejercicio 9
+var sueldo_base:Double = 2675, horas_extra: Double? = nil
+
+var sueldo_extra = (horas_extra ?? 0) * 6.5
+
+var sueldo:Double = sueldo_base + sueldo_extra
+
+print(sueldo)

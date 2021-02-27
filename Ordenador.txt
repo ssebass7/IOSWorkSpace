@@ -1,0 +1,93 @@
+class Ordenador{
+    var precio : Int = 0
+    var nombreEquipo : String = "" 
+    
+    var ram = [Ram]()
+    var procesador = Procesador()
+    var almacenamiento = [Almacenamiento]()
+    var tarjetaGrafica = Grafica()
+}
+class Ram{
+    var capacAlmac : String = ""
+    var fabricante : String = ""
+    var rgb : String = ""
+}
+class Procesador{
+    var velocidadProc : String = ""
+    var numCores : Int = 0
+    var numHilos : Int = 0
+    var fabricante : String = ""
+}
+class Almacenamiento{
+    var capacidadAlm : String = ""
+    var fabricante : String = ""
+    var tipoUnidad : String = ""
+}
+class Grafica{
+    var ram : String = ""
+    var consumo : String = ""
+    var cores : Int = 0
+    var velocidad : String = ""
+}
+
+
+
+//OBJETO PC
+var pc = Ordenador()
+pc.precio = 400
+pc.nombreEquipo = "No se que poner:)"
+
+
+
+//OBJETO RAM
+var ram2 = Ram()
+var ram3 = Ram()
+
+ram2.capacAlmac = "8Gb"
+ram2.fabricante = "Apple"
+ram2.rgb = "Si"
+
+ram3.capacAlmac = "4Gb"
+ram3.fabricante = "hp"
+ram3.rgb = "Si"
+
+pc.ram += [ram2,ram3]
+
+
+//OBJETO PROCESADOR 
+var proc2 = Procesador()
+
+proc2.velocidadProc = "2,1GHz"
+proc2.numCores = 15
+proc2.numHilos = 4
+proc2.fabricante = "Intel"
+
+pc.procesador = proc2
+
+//OBJETO ALMACENAMIENTO
+var alm2 = Almacenamiento()
+var alm3 = Almacenamiento()
+
+alm2.capacidadAlm = "tu madre"
+alm2.fabricante = "tu padre"
+alm2.tipoUnidad = "tu tia"
+
+alm3.capacidadAlm = "512Gb"
+alm3.fabricante = "Seagate"
+alm3.tipoUnidad = "HD"
+
+pc.almacenamiento += [alm2,alm3]
+
+//OBJETO TARJETA GRAFICA
+var graf = Grafica()
+
+graf.ram = "4Gb"
+graf.consumo = "300W"
+graf.cores = 9
+graf.velocidad = "1,2GHz"
+
+pc.tarjetaGrafica = graf
+
+
+
+dump(pc)
